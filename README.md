@@ -1,6 +1,7 @@
 # accredify-assessment
 
 1. [Installation](#Installation)
+2. [Additional Information](#Additional Information)
 
 
 ## Installation
@@ -29,7 +30,5 @@ npm install
 npm run build
 ```
 after that you may run the application by serving the site or if you have laragon / herd, place them in their designated folders for projects and you may start using it after starting the respective application up
-if you do not use these programs you may also run the project with
-```bash
-npm run serve
-```
+
+## Additional Information
