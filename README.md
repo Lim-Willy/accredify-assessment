@@ -4,7 +4,14 @@
 
 
 ## Installation
-After Cloning the repository into your local machine, use command prompt to go to the root of the project and install the dependencies with composer. 
+After Cloning the repository into your local machine, create a new .env file with the .env.example file that was provided in the repository
+
+Although an App key is provided, it would be safer for you to regenerate it with
+```bash
+php artisan key:generate
+```
+
+install the dependencies with composer. 
 If you do not have composer you may install it at https://getcomposer.org/download/
 ```bash
 composer install
