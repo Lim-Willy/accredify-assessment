@@ -1,7 +1,8 @@
 # accredify-assessment
 
 1. [Installation](#Installation)
-2. [Additional Information](#AdditionalInformation)
+2. [Entity Relation Diagram](#ERD)
+3. [Additional Information](#Additional-Information)
 
 
 ## Installation
@@ -35,7 +36,34 @@ if using laragon or herd to run the project usually you will be able to access t
 note* currently the Frontend have issues serving with php artisan serve / php -S commands. Due to time constraints i could not investigate it in depth yet on the issue. 
 But the postman with the API will have no issues regardless it is ran with laragon / herd or with php artisan serve.
 
-## AdditionalInformation
+## ERD
+``` mermaid
+erdDiagram
+    user {
+        int id
+        string email
+        string password
+        datetime email_verified_at
+        string remember_token
+        datetime created_at
+        datetime updated_at
+    }
+    file_verification_results {
+        int id
+        int user_id
+        string file_types
+        string verification_Results
+        string issuer_name
+        string recipient_name
+        string recipient_email
+        int timestamp
+        datetime created_at
+        datetime updated_at
+    }
+    user || o--{file_verification_results: "has many"
+```
+
+## Additional Information
 you may refer to the POSTMAN API documentations with this link
 https://documenter.getpostman.com/view/29577252/2sA3rwNaB6
 
