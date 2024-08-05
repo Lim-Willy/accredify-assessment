@@ -1,10 +1,18 @@
 # accredify-assessment
 
 1. [Installation](#Installation)
+2. [Additional Information](#AdditionalInformation)
 
 
 ## Installation
-After Cloning the repository into your local machine, use command prompt to go to the root of the project and install the dependencies with composer. 
+After Cloning the repository into your local machine, create a new .env file with the .env.example file that was provided in the repository
+
+Although an App key is provided, it would be safer for you to regenerate it with
+```bash
+php artisan key:generate
+```
+
+install the dependencies with composer. 
 If you do not have composer you may install it at https://getcomposer.org/download/
 ```bash
 composer install
@@ -22,7 +30,5 @@ npm install
 npm run build
 ```
 after that you may run the application by serving the site or if you have laragon / herd, place them in their designated folders for projects and you may start using it after starting the respective application up
-if you do not use these programs you may also run the project with
-```bash
-npm run serve
-```
+
+## AdditionalInformation
