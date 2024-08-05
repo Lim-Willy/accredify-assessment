@@ -29,6 +29,11 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm?ref=sfeir.dev
 npm install
 npm run build
 ```
-after that you may run the application by serving the site or if you have laragon / herd, place them in their designated folders for projects and you may start using it after starting the respective application up
+after that you may run the application by using laragon / herd, place them in their designated folders for projects and you may start using it after starting the respective application up
 
 ## AdditionalInformation
+you may refer to the POSTMAN API documentations with this link
+https://documenter.getpostman.com/view/29577252/2sA3rwNaB6
+
+additionally the postman collection file can be obtain from this drive,
+https://drive.google.com/drive/folders/1wvXell39IpRoiKpSAYlhnBTFk_72mrfQ?usp=sharing
