@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Verification;
 
 // use App\DataTransferObjects\JsonVerification;
 use App\DataTransferObjects\VerificationFileContent;
@@ -17,8 +17,9 @@ use Illuminate\Http\Response;
 use Illuminate\Http\JsonResponse;
 use App\Http\Resources\Response\SuccessResponseResource;
 use App\Http\Resources\Response\ErrorResponseResource;
+use App\Http\Controllers\Controller;
 
-class VerificationController extends Controller
+class Verification extends Controller
 {
     protected FileVerificationService $verificationService;
 
@@ -26,7 +27,7 @@ class VerificationController extends Controller
         $this->verificationService = new FileVerificationService();
     }
 
-    public function verifyJsonFile(VerifyJsonFileRequest $request) : JsonResponse
+    public function __invoke(VerifyJsonFileRequest $request) : JsonResponse
     {
         $fileContent = file_get_contents($request->file('fileUpload'));
         $fileJsonContent = json_decode($fileContent, true);

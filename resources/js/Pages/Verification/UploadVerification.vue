@@ -52,7 +52,10 @@ async function submitFiles() {
         jsonData.value = response.data;
         console.log(response.data);
     } catch (error) {
-        console.error(error);
+        console.log(error);
+        jsonData.value = {
+            "Message": "Error."
+        }
     }
 }
 </script>
