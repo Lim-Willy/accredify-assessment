@@ -38,7 +38,7 @@ But the postman with the API will have no issues regardless it is ran with larag
 
 ## ERD
 ``` mermaid
-erdDiagram
+erDiagram
     user {
         int id
         string email
@@ -60,7 +60,7 @@ erdDiagram
         datetime created_at
         datetime updated_at
     }
-    user || o--{file_verification_results: "has many"
+    user || --o{file_verification_results: "has many"
 ```
 
 ## Additional Information
