@@ -1,4 +1,4 @@
-# accredify-assessment
+# accredify Technical Assessment
 
 1. [Installation](#Installation)
 2. [Entity Relation Diagram](#ERD)
