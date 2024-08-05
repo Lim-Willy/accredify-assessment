@@ -64,7 +64,7 @@ erDiagram
     user || --o{file_verification_results: "has many"
 ```
 
-##Flowchart
+## Flowchart
 ```mermaid
     flowchart TD
     A[Login Page] -->|Login Success| B(Dashboard)
