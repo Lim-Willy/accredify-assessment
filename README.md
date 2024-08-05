@@ -29,7 +29,11 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm?ref=sfeir.dev
 npm install
 npm run build
 ```
-after that you may run the application by using laragon / herd, place them in their designated folders for projects and you may start using it after starting the respective application up
+after that you may run the application by using laragon / herd, place them in their designated folders for projects and you may start using it after starting the respective application up.
+if using laragon or herd to run the project usually you will be able to access the project with the url: accredify-assessment.test
+
+note* currently the Frontend have issues serving with php artisan serve / php -S commands. Due to time constraints i could not investigate it in depth yet on the issue. 
+But the postman with the API will have no issues regardless it is ran with laragon / herd or with php artisan serve.
 
 ## AdditionalInformation
 you may refer to the POSTMAN API documentations with this link
