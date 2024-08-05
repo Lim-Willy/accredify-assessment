@@ -2,7 +2,8 @@
 
 1. [Installation](#Installation)
 2. [Entity Relation Diagram](#ERD)
-3. [Additional Information](#Additional-Information)
+3. [FlowChart](#Flowchart)
+4. [Additional Information](#Additional-Information)
 
 
 ## Installation
@@ -61,6 +62,19 @@ erDiagram
         datetime updated_at
     }
     user || --o{file_verification_results: "has many"
+```
+
+##Flowchart
+```mermaid
+    flowchart TD
+    A[Login Page] -->|Login Success| B(Dashboard)
+    A --> |Login Failed|A
+    B --> C[File Verification Page]
+    C --> |Upload file| D{verify & store result}
+    D -->|Correct File| E[Verified]
+    D -->|missing recipient| F[invalid_recipient]
+    D -->|missing issuer| G[invalid_issuer]
+    D --> |tampered file| H[invalid_signature]
 ```
 
 ## Additional Information
